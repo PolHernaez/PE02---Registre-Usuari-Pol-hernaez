@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ecualizador: guiño al cartel de música -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="56dp"
+    android:height="28dp"
+    android:viewportWidth="56"
+    android:viewportHeight="28">
+    <path android:fillColor="@color/volt" android:pathData="M0,16h5v12h-5z" />
+    <path android:fillColor="@color/hot" android:pathData="M8,6h5v22h-5z" />
+    <path android:fillColor="@color/paper" android:pathData="M16,12h5v16h-5z" />
+    <path android:fillColor="@color/volt" android:pathData="M24,0h5v28h-5z" />
+    <path android:fillColor="@color/hot" android:pathData="M32,18h5v10h-5z" />
+    <path android:fillColor="@color/paper" android:pathData="M40,4h5v24h-5z" />
+    <path android:fillColor="@color/volt" android:pathData="M48,14h5v14h-5z" />
+</vector>

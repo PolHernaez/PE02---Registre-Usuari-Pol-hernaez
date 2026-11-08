@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">fitxaH</string>
+
+    <!-- Pantalla 1 -->
+    <string name="num_main">01</string>
+    <string name="step_main">Paso 1 de 2</string>
+    <string name="title_main">Ficha de\nusuario</string>
+    <string name="subtitle_main">Rellena los datos, revísalos en la siguiente pantalla y acepta la política.</string>
+    <string name="label_nombre">Nombre</string>
+    <string name="label_apellidos">Apellidos</string>
+    <string name="label_edad">Edad</string>
+    <string name="label_matriculado">Matriculado</string>
+    <string name="hint_nombre">Ej. Marta</string>
+    <string name="hint_apellidos">Ej. Puig Serra</string>
+    <string name="hint_edad">Ej. 19</string>
+    <string name="opt_si">Sí</string>
+    <string name="opt_no">No</string>
+    <string name="label_politica">Política de privacidad</string>
+    <string name="politica_pendiente">Pendiente de aceptar</string>
+    <string name="politica_aceptada">Política aceptada</string>
+    <string name="politica_rechazada">Política no aceptada</string>
+    <string name="btn_mostrar_info">Mostrar Info</string>
+
+    <!-- Pantalla 2 -->
+    <string name="num_second">02</string>
+    <string name="step_second">Paso 2 de 2</string>
+    <string name="title_second">Revisa\ntus datos</string>
+    <string name="label_titular">Titular</string>
+    <string name="cb_politica">Acepto la política de confidencialidad</string>
+    <string name="cb_politica_hint">Si no la marcas, se entiende que no la aceptas.</string>
+    <string name="btn_salir">Salir</string>
+
+    <!-- Valores de ejemplo (solo vista previa del editor) -->
+    <string name="sample_nombre">Marta</string>
+    <string name="sample_apellidos">Puig Serra</string>
+    <string name="sample_edad">19</string>
+    <string name="sample_matriculado">Sí</string>
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="24dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="32dp">
+
+        <!-- Número de cartel + paso -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Cartell.Hero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/num_main" />
+
+            <TextView
+                style="@style/Cartell.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/step_main" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Cartell.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/title_main" />
+
+        <TextView
+            style="@style/Cartell.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/subtitle_main" />
+
+        <!-- Nombre -->
+        <TextView
+            style="@style/Cartell.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/label_nombre" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            style="@style/Cartell.Field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autofillHints="name"
+            android:hint="@string/hint_nombre"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName|textCapWords" />
+
+        <!-- Apellidos -->
+        <TextView
+            style="@style/Cartell.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_apellidos" />
+
+        <EditText
+            android:id="@+id/etApellidos"
+            style="@style/Cartell.Field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autofillHints="familyName"
+            android:hint="@string/hint_apellidos"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName|textCapWords" />
+
+        <!-- Edad -->
+        <TextView
+            style="@style/Cartell.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_edad" />
+
+        <EditText
+            android:id="@+id/etEdad"
+            style="@style/Cartell.Field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/hint_edad"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="3" />
+
+        <!-- Matriculado: RadioGroup con dos fichas -->
+        <TextView
+            style="@style/Cartell.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_matriculado" />
+
+        <RadioGroup
+            android:id="@+id/rgMatriculado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbSi"
+                style="@style/Cartell.Chip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:text="@string/opt_si" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbNo"
+                style="@style/Cartell.Chip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/opt_no" />
+        </RadioGroup>
+
+        <!-- Estado de la política: la actividad cambia el texto y el tinte de las rayas al volver -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bg_card"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/viewEstadoPolitica"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_ratlles"
+                app:tint="@color/tx_3" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Cartell.Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_politica" />
+
+                <TextView
+                    android:id="@+id/tvPolitica"
+                    style="@style/Cartell.Value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/politica_pendiente" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMostrarInfo"
+            style="@style/Cartell.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_btn_primary"
+            android:text="@string/btn_mostrar_info" />
+
+    </LinearLayout>
+</ScrollView>

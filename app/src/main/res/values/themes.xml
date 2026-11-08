@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema fijo oscuro: el Cartell se ve igual de día y de noche. -->
+    <style name="Base.Theme.PE02_RegistreUsuari" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/brand</item>
+        <item name="colorOnPrimary">@color/on_brand</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/tx</item>
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+        <item name="android:fontFamily">@font/archivo</item>
+    </style>
+
+    <style name="Theme.PE02_RegistreUsuari" parent="Base.Theme.PE02_RegistreUsuari" />
+</resources>

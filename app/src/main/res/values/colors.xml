@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Cartell: negro cálido, hueso y rojo plano (mismos tokens que el estilo Cartell de MusyH) -->
+    <color name="bg">#FF0E0C0B</color>
+    <color name="surface">#FF171413</color>
+    <color name="surface_2">#FF221E1C</color>
+    <color name="line">#FF2E2926</color>
+    <color name="tx">#FFF3EEE6</color>
+    <color name="tx_2">#FFA89F96</color>
+    <color name="tx_3">#FF8A817A</color>
+    <color name="brand">#FFFF2E3A</color>
+    <color name="brand_pressed">#FFC9202B</color>
+    <color name="on_brand">#FF0E0C0B</color>
+    <color name="bone_pressed">#FFD8D2C9</color>
+    <color name="on_bone_muted">#FF6B635C</color>
+</resources>
